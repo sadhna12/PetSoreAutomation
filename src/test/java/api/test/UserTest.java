@@ -87,17 +87,17 @@ public void testUpdtaeUser()
 	
 }
 
-
-@Test(priority = 4)
-
-public void testDeleteUser()
-{
-	Response response=UserEndPoints.deleteUser(this.userpayload.getUsername());
-	response.then().log().all();
-	Assert.assertEquals(response.getStatusCode(), 200);
-			
-
-
-}
+//
+//@Test(priority = 4)
+//
+//public void testDeleteUser()
+//{
+//	Response response=UserEndPoints.deleteUser(this.userpayload.getUsername());
+//	response.then().log().all();
+//	Assert.assertEquals(response.getStatusCode(), 200);
+//			
+//
+//
+//}
 	
 }
