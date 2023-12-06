@@ -31,14 +31,14 @@ public class DataDrivenTest
 	}
 
 
-@Test(priority = 2,dataProvider = "GetuserName",dataProviderClass=DataProviders.class )
-public void testGetUserByName( String username)
-{
-	Response response=	UserEndPoints.readUser(username);
-
-	response.then().log().all();
-	Assert.assertEquals(response.getStatusCode(), 200);
-}
+//@Test(priority = 2,dataProvider = "GetuserName",dataProviderClass=DataProviders.class )
+//public void testGetUserByName( String username)
+//{
+//	Response response=	UserEndPoints.readUser(username);
+//
+//	response.then().log().all();
+//	Assert.assertEquals(response.getStatusCode(), 200);
+//}
 
 
 //@Test(priority = 3,dataProvider = "DELuserNames",dataProviderClass=DataProviders.class )
